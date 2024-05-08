@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap');
+body{
+    font-family: var(--font-family);
+}
+
+ /* Typography */
+
+
+h1, h2, h3 {
+    font-family: var(--font-family);
+    color: #444;
+}
+
+/* Color Scheme */
+
+ :root {
+    --primary-color: #B0050E;
+    --secondary-color: #002967; 
+    --link-hover-color: #0056b3; 
+    --text-color-normal:#25333c;
+    --font-family: "Roboto", sans-serif;
+    --poppins-font-family: 'Poppins', sans-serif;
+} 
+body {
+    /* background-color: var(--primary-color);  */
+    color: var(--text-color-normal);
+}
+
+header {
+    /* background-color: var(--secondary-color);  */
+    padding: 10px 20px;
+}
+
+/* Layout */
+
+/* Whitespace */
+p {
+    margin-bottom: 20px;
+}
+
+/* Images and Icons */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Buttons and Links */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+ /* Anchor Tags (Links) */
+ a {
+    text-decoration: none; /* Remove underline */
+    color:var(--text-color-normal); 
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Margin Reset for Paragraphs and Headings */
+p, h1, h2, h3, h4, h5, h6, ul {
+    margin: 0; /* Reset margin */
+}
+
+/* header styles starts*/
+.header-strip.container-fluid{
+   background-color: var(--secondary-color);
+   height: 24px;
+   color: white;
+   line-height: 24px;
+}
+.header-strip a{
+    color: white;
+    padding-right: 16px;
+    font-size: 13px;
+}
+.header-strip .fa {
+    margin-right: 5px;
+}
+header .nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+header nav ul li {
+    list-style: none;
+    display: inline;
+    padding: 18px;
+    color: var(--text-color-normal);
+}
+header ul li a {
+    font-weight: 400;
+    font-size: 18px;
+}
+header ul li.active a{
+    font-weight: 600;
+}
+#logo{
+    margin-top: 8px;
+    width: 180px;
+}
+.p-56{padding: 56px;}
+/* header styles ends*/
+.company_details{
+  padding: 56px 0;
+}
+/* banner image changes starts */
+#banner img{
+    width: 100%;
+}
+#banner{
+    position: relative;
+}
+.banner-content{
+    position: absolute;
+    top: 9vw;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.banner-content h3{
+    /* width: 50%; */
+    color: var(--secondary-color);
+}
+.banner-content h4{
+    font-size: 2vw;
+}
+.banner-content h4, .banner-content p{
+    width: 60%;
+    margin-top: 18px;
+}
+.banner-content h3{
+    font-size: 3vw;
+    font-family: var(--poppins-font-family);
+}
+.banner-content p{
+    font-size: 1vw;
+    font-family: var(--poppins-font-family);
+}
+.brand-icon{
+    position: absolute;
+    
+    width: 20px !important;
+}
+.brand-icon-banner{
+    right: -20px;
+    top: 0px;
+}
+.brand-icon-services{
+    right: -16px;
+    top: -10px;
+}
+.primary-color{
+    color: var(--primary-color);
+}
+.width-320{
+    width: 320px;
+}
+.width-220{
+    width: 320px;
+}
+.width-165{
+    width: 165px;
+    margin: 24px auto;
+    margin-bottom: 0 !important;
+    font-family: var(--font-family);
+}
+#our_services{
+    margin-top: 32px;
+}
+.mt-32{
+    margin-top: 32px !important;
+}
+.mb-32{
+    margin-bottom: 32px !important;
+}
+.mt-12{
+  margin-top: 12px;
+}
+.mt-16{
+  margin-top: 16px;
+}
+/* banner image changes ends */
+
+/* our_services Section css starts */
+
+#our_services h2, #about_us h2{
+    font-size: 32px;
+    font-family: var(--poppins-font-family);
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin: 18px auto;
+}
+#our_services p.heading-description,#about_us p.heading-description{
+    font-size: 18px;
+    font-family: var(--font-family);
+    width: 650px;
+    margin: 0 auto;
+    /* color: var(--secondary-color); */
+}
+.box-icon{
+    border-radius: 8px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-icon img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.services-left.text-right h3, .services-left.text-right p{
+    text-align: right;
+}
+.services-right.text-left p, .services-left.text-left h3{
+    text-align: left;
+}
+.box-icon-1{
+    background-color: var(--primary-color);
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.box-icon-2{
+    background-color: var(--secondary-color);
+    margin-right: 24px;
+    margin-left: 24px;
+}
+.heading-border {
+    border: 1px solid #b0050e !important;
+    text-align: center;
+    display: block;
+    width: 65px;
+    margin: 13px auto;
+    margin-top: -10px;
+    margin-bottom: 12px;
+}
+.banner-btn{
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    padding: 12px 24px;
+    letter-spacing: 1px;
+    color: white;
+    border: 1px solid var(--secondary-color);
+}
+.banner-btn:hover{
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    transition: 0.5s;
+}
+.services-card{
+       border-bottom: 1px solid;
+        padding-bottom: 20px;
+        background-color: #f4f6f7;
+        padding-top: 15px;
+}
+.services-card h3{
+    margin-bottom: 12px;
+}
+
+
+
+
+.container, .container-fluid{
+    padding: 0 !important;
+}
+#company_info{
+  background-color: #d8ebfa;
+  
+}
+#company_info img{
+  width: 100%;
+  height: 100%;
+}
+/* ////////////// /* Swiper Slider CSS  Starts //////////////////////// */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+#slider{
+    background-color: #d8ebfa;
+}
+
+main {
+  position: relative;
+  width: calc(min(90rem, 90%));
+  margin: 0 auto;
+  min-height: 50vh;
+  column-gap: 3rem;
+  padding-block: min(20vh, 3rem);
+}
+
+.bg {
+  position: fixed;
+  top: -4rem;
+  left: -18rem;
+  z-index: -1;
+  opacity: 0;
+  height: 100%;
+  width: 30%;
+}
+
+.bg2 {
+  position: fixed;
+  bottom: -2rem;
+  right: -0;
+  z-index: -1;
+  width: 10.375rem;
+  opacity: 0;
+  z-index: 9;
+}
+
+main > div span {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 1rem;
+  color: #717171;
+}
+
+main > div h1 {
+  text-transform: capitalize;
+  letter-spacing: 0.8px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: clamp(3.4375rem, 3.25rem + 0.75vw, 4rem);
+  background-color: #005baa;
+  background-image: linear-gradient(45deg, #005baa, #000000);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+main > div hr {
+  display: block;
+  background: var(--primary-color);
+  height: 0.25rem;
+  width: 6.25rem;
+  border: none;
+  margin: 1.125rem 0 1.875rem 0;
+}
+
+main > div p {
+  line-height: 1.6;
+}
+
+main a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #717171;
+  font-weight: 500;
+  background: #fff;
+  border-radius: 3.125rem;
+  transition: 0.3s ease-in-out;
+}
+
+main > div > a {
+  border: 2px solid #c2c2c2;
+  margin-top: 2.188rem;
+  padding: 0.625rem 1.875rem;
+}
+
+main > div > a:hover {
+  border: 0.125rem solid #005baa;
+  color: #005baa;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 3.125rem;
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.swiper-pagination {
+  bottom: 1.25rem !important;
+}
+
+.swiper-slide {
+  width: 18.75rem;
+  height: 28.125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: self-start;
+}
+
+.swiper-slide h2 {
+  color: #25333c;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-bottom: 0.625rem;
+  padding: 0 0 0 1.563rem;
+  text-transform: uppercase;
+}
+
+.swiper-slide p {
+  color: #25333c;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding: 0 1.563rem;
+  line-height: 1.6;
+  font-size: 0.75rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.swiper-slide a {
+  margin: 1.25rem 1.563rem 3.438rem 1.563rem;
+  padding: 0.438em 1.875rem;
+  font-size: 0.9rem;
+}
+
+.swiper-slide a:hover {
+  color: #005baa;
+}
+
+.swiper-slide div {
+  display: none;
+  opacity: 0;
+  padding-bottom: 0.625rem;
+  background-color: white;
+  color: black;
+}
+
+.swiper-slide-active div {
+  display: block;
+  opacity: 1;
+  padding: 16px 8px;
+  border: 1px solid #e7e7e7;
+}
+
+.swiper-slide--one {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://i.postimg.cc/Twr2JjfJ/Whats-App-Image-2024-03-12-at-14-28-24.jpg")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--two {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://media.licdn.com/dms/image/C5103AQHLyZ_o6wmc5w/profile-displayphoto-shrink_200_200/0/1536851004872?e=1715817600&v=beta&t=loOaiijOGvmoweIi7IMr8VffleaB8jGGt243dZqJSeY")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--three {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://www.cglia.com/assets/img/testimonials/sg.jpg")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--four {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://www.cglia.com/assets/img/testimonials/gvn.jpg")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--five {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://www.cglia.com/assets/img/testimonials/tarak.jpg")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
+
+@media screen and (min-width: 48rem) {
+  main {
+    display: flex;
+    align-items: center;
+  }
+  .bg,
+  .bg2 {
+    opacity: 0.1;
+  }
+}
+
+@media screen and (min-width: 93.75rem) {
+  .swiper {
+    width: 85%;
+  }
+}
+
+/* Swiper slider css ends */
+
+/* footer styles  */
+footer{
+  height: 45px;
+  background-color: var(--secondary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
